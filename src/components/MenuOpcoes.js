@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function MenuOpcoes() {
 
@@ -37,8 +38,7 @@ export default function MenuOpcoes() {
             <Link to="/cadastro">
                 <button>Cadastro</button>
             </Link>
-            <button onClick={logoff}>Logoff</button>
-            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button className='loagout' onClick={logoff}><LogoutIcon/></button>
         </div>
     )
 }

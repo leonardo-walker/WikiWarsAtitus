@@ -4,7 +4,7 @@ import Cabecalho from '../components/Cabecalho'
 import Rodape from '../components/Rodape'
 import { useNavigate } from 'react-router-dom'
 import MenuOpcoes from '../components/MenuOpcoes'
-import { salvarGamers } from '../services/BancoService'
+import { salvarDuvidas } from '../services/BancoService'
 
 export default function Cadastro(props) {
     const navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function Cadastro(props) {
         }
 
         try {
-            await salvarGamers(dados)
+            await salvarDuvidas(dados)
             alert("Dados Salvos com Sucesso")
             navigate('/menu')
 

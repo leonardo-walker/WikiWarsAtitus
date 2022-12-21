@@ -1,15 +1,14 @@
-.coluna {
-    border: 1px solid black
-}
+
 
 .cabecalho {
-    min-height: 180px;
-    text-align: center;
-    background-color: white;
-    border-radius: 10px;
+    min-height: 400px;
+    text-align: left;
+    text-align-last: left;
     padding: 10px;
-    background-image: url("../images/back.jpg");
-    background-size: cover;
+    background-image: url("../images/back4.jpg");
+    background-size:cover;
+    
+    
 }
 
 .corpo {
@@ -49,7 +48,12 @@ button {
     transition: all 250ms;
     overflow: hidden;
     float: left;
+    margin-top: 1%;
+    margin-left: 5px;
+
+
 }
+
 button:before {
     content: "";
     position: absolute;
@@ -60,11 +64,11 @@ button:before {
     border-radius: 15px;
     background-color: #212121;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms
-   }
-   
+}
+
 button:hover {
     cursor: pointer;
     color: #e8e8e8;
@@ -72,4 +76,9 @@ button:hover {
 
 button:hover::before {
     width: 100%;
-   }
+}
+
+button .loagout {
+    margin-left: 80%;
+
+}

@@ -3,7 +3,7 @@ import React, { useLayoutEffect, useState } from 'react'
 import Cabecalho from '../components/Cabecalho'
 import Rodape from '../components/Rodape'
 import MenuOpcoes from '../components/MenuOpcoes'
-import { pegarGamers, deleteGamer } from '../services/BancoService'
+import { pegarDuvidas, deleteDuvidas } from '../services/BancoService'
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -15,25 +15,25 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function Menu(props) {
 
-  const [gamers, setGamers] = useState([])
+  const [duvidas, setDuvidas] = useState([])
 
-  const buscarGamers = () => {
-    pegarGamers()
-      .then((dados) => setGamers(dados))
+  const buscarDuvidas = () => {
+    pegarDuvidas()
+      .then((dados) => setDuvidas(dados))
       .catch((e) => alert(e))
   }
 
   useLayoutEffect(() => {
 
-    buscarGamers()
+    buscarDuvidas()
   }, [])
 
-  const deletarGamer = async (id) => {
+  const deleteDuvidas = async (id) => {
 
     try {
-      await deleteGamer(id)
+      await deleteDuvidas(id)
       alert("Dados Excluídos")
-      buscarGamers()
+      buscarDuvidas()
 
     } catch (error) {
       alert(error)
@@ -64,7 +64,7 @@ export default function Menu(props) {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {gamers.map((row) => (
+                  {duvidas.map((row) => (
                     <TableRow
                       key={row.id}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -79,7 +79,7 @@ export default function Menu(props) {
                       <TableCell align="right">{row.telefone}</TableCell>
                       <TableCell align="right">{row.rede}</TableCell>
                       <TableCell align="right">
-                        <IconButton color="primary" onClick={() => deletarGamer(row.id)}>
+                        <IconButton color="primary" onClick={() => deleteDuvidas(row.id)}>
                           <DeleteIcon />
                         </IconButton>
 
