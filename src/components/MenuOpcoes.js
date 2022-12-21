@@ -35,9 +35,6 @@ export default function MenuOpcoes() {
             <Link to="/duvidas">
                 <button>Dúvidas</button>
             </Link>
-            <Link to="/cadastro">
-                <button>Cadastro</button>
-            </Link>
             <button className='loagout' onClick={logoff}><LogoutIcon/></button>
         </div>
     )

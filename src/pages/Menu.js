@@ -32,7 +32,6 @@ export default function Menu(props) {
 
     try {
       await deleteDuvidas(id)
-      alert("Dados Excluídos")
       buscarDuvidas()
 
     } catch (error) {

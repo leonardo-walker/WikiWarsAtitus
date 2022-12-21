@@ -10,7 +10,6 @@ import Planets from "./pages/Planets";
 import Species from "./pages/Species";
 import Starchips from "./pages/Starships";
 import Sobre from "./pages/Sobre";
-import Cadastro from "./pages/Cadastro";
 import Login from "./pages/Login";
 import Duvidas from "./pages/Duvidas";
 import './assets/css/estilos.css'
@@ -32,10 +31,6 @@ function App() {
     {
       path: "/menu",
       element: login ? <Menu /> : <Login verificarLogin={verificarLogin} />,
-    },
-    {
-      path: "/cadastro",
-      element: login ? <Cadastro /> : <Login verificarLogin={verificarLogin} />,
     },
     {
       path: "/duvidas",
