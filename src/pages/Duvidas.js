@@ -10,15 +10,13 @@ export default function Duvidas(props) {
     const navigate = useNavigate();
 
     const [nome, setNome] = useState("")
-    const [email, setEmail] = useState("")
     const [telefone, setTelefone] = useState("")
-    const [rede, setRede] = useState("")
+    const [duvida, setDuvida] = useState("")
 
     const limpar = () => {
         setNome("")
-        setEmail("")
         setTelefone("")
-        setRede("")
+        setDuvida("")
     }
 
     const salvar = async () => {
@@ -26,9 +24,8 @@ export default function Duvidas(props) {
 
         const dados = {
             nome: nome,
-            email: email,
             telefone: telefone,
-            rede: rede
+            duvida: duvida
         }
 
         try {
@@ -63,15 +60,8 @@ export default function Duvidas(props) {
                                     onChange={(e) => setNome(e.target.value)}
                                 />
                             </Grid>
-                            <Grid item md={6} xs={12} sm={12}>
-                                <TextField
-                                    fullWidth
-                                    label="E-mail"
-                                    variant="outlined"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                />
-                            </Grid>
+                
+                         
                             <Grid item md={6} xs={12} sm={12}>
                                 <TextField
                                     fullWidth
@@ -82,13 +72,13 @@ export default function Duvidas(props) {
 
                                 />
                             </Grid>
-                            <Grid item md={6} xs={12} sm={12}>
+                            <Grid item md={12} xs={12} sm={12}>
                                 <TextField
                                     fullWidth
-                                    label="Link Rede Social"
+                                    label="Sua dúvida"
                                     variant="outlined"
-                                    value={rede}
-                                    onChange={(e) => setRede(e.target.value)}
+                                    value={duvida}
+                                    onChange={(e) => setDuvida(e.target.value)}
                                 />
                             </Grid>
                             <Grid item md={12} xs={12} sm={12}>

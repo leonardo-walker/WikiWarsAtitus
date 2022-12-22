@@ -15,19 +15,19 @@ export default function MenuOpcoes() {
                 <button className='button'> Home</button>
             </Link>
             <Link to="/films">
-                <button className='button'>Films</button>
+                <button className='button'>Filmes</button>
             </Link>
             <Link to="/people">
-                <button className='button'>People</button>
+                <button className='button'>Personagens</button>
             </Link>
             <Link to="/planets">
-                <button className='button'>Planets</button>
+                <button className='button'>Planetas</button>
             </Link>
             <Link to="/species">
-                <button className='button'>Species</button>
+                <button className='button'>Espécies</button>
             </Link>
             <Link to="/starchips">
-                <button className='button'>Starchips</button>
+                <button className='button'>Starships</button>
             </Link>
             <Link to="/sobre">
                 <button className='button'>Sobre</button>

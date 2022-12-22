@@ -56,9 +56,8 @@ export default function Menu(props) {
                   <TableRow>
                     <TableCell>ID</TableCell>
                     <TableCell align="right">Nome</TableCell>
-                    <TableCell align="right">E-mail</TableCell>
                     <TableCell align="right">Telefone</TableCell>
-                    <TableCell align="right">Rede Social</TableCell>
+                    <TableCell align="right">Dúvida</TableCell>
                     <TableCell align="right">Opções</TableCell>
                   </TableRow>
                 </TableHead>
@@ -74,9 +73,8 @@ export default function Menu(props) {
                       <TableCell component="th" scope="row">
                         {row.nome}
                       </TableCell>
-                      <TableCell align="right">{row.email}</TableCell>
                       <TableCell align="right">{row.telefone}</TableCell>
-                      <TableCell align="right">{row.rede}</TableCell>
+                      <TableCell align="right">{row.duvida}</TableCell>
                       <TableCell align="right">
                         <IconButton color="primary" onClick={() => deleteDuvidas(row.id)}>
                           <DeleteIcon />
