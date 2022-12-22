@@ -1,13 +1,11 @@
-
-
 .cabecalho {
     min-height: 400px;
     text-align: left;
     padding: 10px;
     background-image: url("../images/back4.jpg");
-    background-size:cover;
-    
-    
+    background-size: cover;
+
+
 }
 
 .corpo {
@@ -20,14 +18,15 @@
 }
 
 .rodape {
-   
+
     min-height: 200px;
     font-size: 12px;
     background-image: url("../images/back2.jpg");
-    background-size:cover;
+    background-size: cover;
 }
+
 .rodape .p {
-    color:#e8e8e8;
+    color: #e8e8e8;
     font-size: 12px;
     text-align: center;
     padding-top: 20%;
@@ -39,7 +38,7 @@
     display: inline-block;
 }
 
-button {
+.button {
     padding: 15px 25px;
     border: 30px;
     border-radius: 15px;
@@ -60,7 +59,7 @@ button {
 
 }
 
-button:before {
+.button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -75,16 +74,40 @@ button:before {
     transition: all 250ms
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
     color: #e8e8e8;
 }
 
-button:hover::before {
+.button:hover::before {
     width: 100%;
 }
 
 button .loagout {
     margin-left: 80%;
 
+}
+
+
+.img {
+    float: left;
+    width: 15%;
+    border: thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+}
+
+.api {
+    width: 125%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+
+}
+
+table {
+    border: 1px solid  #000000;
+    border-radius: 14px 0px 0px 0px;
+    
 }

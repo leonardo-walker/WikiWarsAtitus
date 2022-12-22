@@ -30,11 +30,19 @@ export default function Species() {
 
                     <div>
     <h1>ESPÉCIES</h1>
+    <table className="api">  
     {
         Species.map((item, key) =>
-            <div> Nome da Espécie: {item.name} - Língua: {item.language} </div>
+        <tr>
+                                    <td style={{widht: "33%"}}><b>Nome da Espécie:</b> {item.name}</td>
+                                    <td style={{widht: "33%"}}><b>Língua:</b> {item.language}</td>
+
+
+                                </tr>
+           
     )
     }
+    </table>
 </div> 
                     <Grid item md={12} xs={12} sm={12}>
                         <Rodape />

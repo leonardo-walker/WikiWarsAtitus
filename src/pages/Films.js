@@ -31,13 +31,19 @@ export default function Films() {
                 </Grid>
                 <div>
                     <h1>FILMES</h1>
-                    {
-                        Films.map((item, key) =>
-                            <div> {item.title} </div>
-                    )
-                    }
+                    <table className="api">
+                        {
+                            Films.map((item, key) =>
+                            <tr>
+                                    <td style={{widht: "50%"}}><b>Título:</b> {item.title}</td>
+                                    <td style={{widht: "50%"}}><b>Diretor:</b> {item.director}</td>
 
+                                </tr>
+            
+                            )
+                        }
 
+                    </table>
                 </div>
                 <Grid item md={12} xs={12} sm={12}>
                     <Rodape />

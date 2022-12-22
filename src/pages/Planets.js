@@ -30,13 +30,19 @@ export default function Planets() {
 
                     <div>
     <h1>PLANETAS</h1>
+    <table className="api"> 
     {
         Planets.map((item, key) =>
-            <div> Nome: {item.name} - Clima: {item.climate} - População: {item.population} </div>
+        <tr>
+            <td style={{widht: "33%"}}><b>Nome:</b> {item.name}</td>
+            <td style={{widht: "33%"}}><b>Clima:</b> {item.climate}</td>
+            <td style={{widht: "33%"}}><b>População:</b> {item.population}</td>
+
+        </tr> 
     )
     }
 
-
+</table>
 </div>
                     <Grid item md={12} xs={12} sm={12}>
                         <Rodape />

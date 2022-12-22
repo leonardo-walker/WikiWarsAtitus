@@ -29,13 +29,20 @@ export default function People() {
                 </Grid>
                 <div>
     <h1>PERSONAGENS</h1>
+    <table className="api"> 
     {
         People.map((item, key) =>
-            <div> {item.name} - Altura: {item.height} </div>
+        <tr>
+            <td style={{widht: "33%"}}><b>Nome:</b> {item.name}</td>
+            <td style={{widht: "33%"}}><b>Altura:</b> {item.height}</td>
+           
+
+        </tr>
+        
     )
     }
 
-
+</table>
 </div>
                 <Grid item md={12} xs={12} sm={12}>
                     <Rodape />
