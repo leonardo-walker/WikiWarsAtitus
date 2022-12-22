@@ -3,7 +3,6 @@
 .cabecalho {
     min-height: 400px;
     text-align: left;
-    text-align-last: left;
     padding: 10px;
     background-image: url("../images/back4.jpg");
     background-size:cover;
@@ -21,10 +20,17 @@
 }
 
 .rodape {
-    text-align: center;
+   
+    min-height: 200px;
     font-size: 12px;
-    background-image: url("../images/back5.jpg");
-
+    background-image: url("../images/back2.jpg");
+    background-size:cover;
+}
+.rodape .p {
+    color:#e8e8e8;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20%;
 }
 
 .menu {
