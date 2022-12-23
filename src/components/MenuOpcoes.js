@@ -12,30 +12,30 @@ export default function MenuOpcoes() {
     return (
         <div className='menu'>
             <Link to="/menu">
-                <button className='button'> Home</button>
+                <button className='button_menu'> Home</button>
             </Link>
             <Link to="/films">
-                <button className='button'>Filmes</button>
+                <button className='button_menu'>Filmes</button>
             </Link>
             <Link to="/people">
-                <button className='button'>Personagens</button>
+                <button className='button_menu'>Personagens</button>
             </Link>
             <Link to="/planets">
-                <button className='button'>Planetas</button>
+                <button className='button_menu'>Planetas</button>
             </Link>
             <Link to="/species">
-                <button className='button'>Espécies</button>
+                <button className='button_menu'>Espécies</button>
             </Link>
             <Link to="/starchips">
-                <button className='button'>Starships</button>
+                <button className='button_menu'>Starships</button>
             </Link>
             <Link to="/sobre">
-                <button className='button'>Sobre</button>
+                <button className='button_menu'>Sobre</button>
             </Link>
             <Link to="/duvidas">
-                <button className='button'>Dúvidas</button>
+                <button className='button_menu'>Dúvidas</button>
             </Link>
-            <button className='button' onClick={logoff}><LogoutIcon/></button>
+            <button className='button_menu' onClick={logoff}><LogoutIcon/></button>
         </div>
         
 

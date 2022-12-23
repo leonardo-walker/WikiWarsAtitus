@@ -66,7 +66,7 @@ export default function Login(props) {
         </div>
       </Grid>
       <Grid item md={4} xs={12} sm={12}></Grid>
-      <Grid item md={4} xs={12} sm={12} style={{ backgroundColor: "white", padding: 10, borderRadius: 10 }}>
+      <Grid item md={4} xs={12} sm={12} className='login'style={{ padding: 10, borderRadius: 10 }}>
         <div style={{ marginBottom: 10 }}>
           <TextField
             label="E-mail"

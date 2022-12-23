@@ -17,22 +17,23 @@ export default function Sobre() {
         <Grid item md={12} xs={12} sm={12}>
 
           <MenuOpcoes />
-          <div className='equipe'> <h1>Equipe</h1> </div>
+          <div className='equipe'> 
+            <h1>Equipe</h1>
+          </div>
 
-            <div><h3>Leonardo Walker</h3> <a  className= 'button'target="_blank" href="https://www.linkedin.com/in/leonardo-walker/"><LinkedInIcon/></a>
-              <img className="img" src={LeoWalker} /> </div>
-              
-              
-              
-              <div> <h3>Thomas Soldá</h3>
-              <img className="img" src={thomasFoto} />
+          <div className='card'>
+            <div className='leonardo'>
+              <img className="img" src={LeoWalker} /> 
+              <h3>Leonardo Walker</h3> 
+              <a className= 'button'target="_blank" href="https://www.linkedin.com/in/leonardo-walker/"><LinkedInIcon sx={{ fontSize: '32px' }} /></a>
             </div>
-        
-
-               <div><a  className= 'button'target="_blank" href="https://www.linkedin.com/in/leonardo-walker/"><LinkedInIcon/></a></div>
-
-   
-    </Grid>
+            <div className='thomas'>
+              <img className="img" src={thomasFoto} />
+              <h3>Thomas Soldá</h3>
+              <a className='button' target="_blank" href="https://www.linkedin.com/in/leonardo-walker/"><LinkedInIcon sx={{ fontSize: '32px' }} /></a>
+            </div>
+          </div>   
+      </Grid>
         <Grid item md={12} xs={12} sm={12}>
           <Rodape />
         </Grid>
