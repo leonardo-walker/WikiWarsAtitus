@@ -1,10 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pré requisitos:
+| Ferramenta | Versão  |
+|-------|--------|
+| [Ruby](https://www.ruby-lang.org/pt/) | v.3.1.2  |
+| [Git](https://git-scm.com/)   | v.2.36.1 |
+| [Cucumber](https://rubygems.org/gems/cucumber) | v.8.0.0  |
+| [Capybara](https://rubygems.org/gems/capybara/versions/2.7.1?locale=pt-BR) | v.3.37.1  |
+| [SitePrism](https://rubygems.org/gems/site_prism/versions/2.9?locale=pt-BR) | v.3.7.3  |
+| [ChromeDriver](https://chromedriver.chromium.org/downloads) | Baseado na versão do seu GoogleChrome   |
 
-## Available Scripts
+# Instalação:
+## [Git](https://git-scm.com/downloads)
+1. Baixar a versão estável mais recente.
+2. Executar o instalador.
 
-In the project directory, you can run:
+## [Ruby](https://rubyinstaller.org/downloads/)
+ 1. Baixar o instalador Ruby+Devikit 3.1.2-1 (x64)
+ 2. Executar o instalador:
+  - Marcar a opção"Add Ruby executables to your Path"
+  - Marcar a opção "Associate .rb and .rbw files with this Ruby installantion".
+  
+## Gem's
+1. Executar os seguintes comandos no CMD: <br>
+ ```sh 
+ gem install win32console 
+ ``` 
+ ```sh 
+ gem install bundler 
+ ``` 
+ ```sh 
+ gem install ruby-debug-ide
+ ``` 
+  
+# Execução dos Testes:
+- Abrir o CMD da pasta "Testes" e executar os seguintes comandos:
+ ```sh
+ bundle install
+ ```
+  ```sh
+ cucumber -t@"Nome do teste"
+ ```
+ 
+# Implantação:
+```sh
+git checkout -b "main"
+```
+```sh
+git commit -m "nome do commit"
+```
+```sh
+git push -u origin main
+```
+# Autor
+### Leonardo Walker
+- [GitHub](https://github.com/leonardo-walker)
+- [LinkedIn](https://www.linkedin.com/in/leonardo-walker/)
+- Email: leonardowalker289@gmail.com
+
+
+# Licença
+Copyright © 2022 [Leonardo Walker](https://github.com/leonardo-walker).<br>
+Copyright © 2022 [Compass.uol](https://compass.uol/).
+
+# Créditos
+- [Documentação GIT](https://git-scm.com/doc)
+- [Documentação Ruby](https://www.ruby-lang.org/pt/documentation/)
+- [Documentação Cucumber](https://github.com/cucumber/cucumber-ruby)
+- [Documentação Capybara](https://github.com/teamcapybara/capybara)
+- [Documentação SitePrism](https://github.com/site-prism/site_prism) 
 
 ### `npm start`
 

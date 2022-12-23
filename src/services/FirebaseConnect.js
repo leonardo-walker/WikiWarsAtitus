@@ -8,12 +8,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyANo2yvEdkrIBE-Y0b9VvjKbr_Fo6joSMs",
-  authDomain: "wikiwars-atitus-6c216.firebaseapp.com",
-  projectId: "wikiwars-atitus-6c216",
-  storageBucket: "wikiwars-atitus-6c216.appspot.com",
-  messagingSenderId: "370020264471",
-  appId: "1:370020264471:web:3ead9f2411892eeadfca52"
+  apiKey: "AIzaSyB2jx8sudavf-08D99Cnn2Hnv3YZm6DBzs",
+  authDomain: "wikiwars-atitus.firebaseapp.com",
+  projectId: "wikiwars-atitus",
+  storageBucket: "wikiwars-atitus.appspot.com",
+  messagingSenderId: "363204546554",
+  appId: "1:363204546554:web:01460efe2a6d0283359e43"
 };
 
 // Initialize Firebase
