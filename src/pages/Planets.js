@@ -29,7 +29,7 @@ export default function Planets() {
                     </Grid>
 
                     <div>
-    <h1>PLANETAS</h1>
+    <h1 className='title'>PLANETAS</h1>
     <table className="api"> 
     {
         Planets.map((item, key) =>

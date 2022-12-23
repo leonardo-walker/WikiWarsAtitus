@@ -29,7 +29,7 @@ export default function Starships() {
                 </Grid>
 
                 <div>
-                    <h1>NAVES ESPACIAIS</h1>
+                    <h1 className='title'>NAVES ESPACIAIS</h1>
                     <table className="api"> 
                     {
                         Starships.map((item, key) =>

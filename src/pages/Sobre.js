@@ -17,7 +17,7 @@ export default function Sobre() {
         <Grid item md={12} xs={12} sm={12}>
 
           <MenuOpcoes />
-          <div className='equipe'> 
+          <div className='title'> 
             <h1>Equipe</h1>
           </div>
 

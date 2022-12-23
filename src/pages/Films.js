@@ -30,7 +30,7 @@ export default function Films() {
 
                 </Grid>
                 <div>
-                    <h1>FILMES</h1>
+                    <h1 className='title'>FILMES</h1>
                     <table className="api">
                         {
                             Films.map((item, key) =>

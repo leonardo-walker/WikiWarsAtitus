@@ -28,7 +28,7 @@ export default function People() {
           
                 </Grid>
                 <div>
-    <h1>PERSONAGENS</h1>
+    <h1 className='title'>PERSONAGENS</h1>
     <table className="api"> 
     {
         People.map((item, key) =>

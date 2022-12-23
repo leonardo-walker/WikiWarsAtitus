@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap'); 
  * {
      margin: 0;
      padding: 0;
@@ -20,7 +20,8 @@
 
  .cabecalho h1 {
      margin-top: 9rem;
-     margin-left: 9rem;
+     margin-left: 4rem;
+     font-family: 'Martian Mono', monospace;
  }
 
  .corpo {
@@ -154,11 +155,12 @@
      background-size: cover;
  }
 
- .equipe {
+ .title {
     font-size: 25px;   
     font-family: 'Cormorant';
-    text-align: center;
+    text-align:left;
     margin-top: 2rem;
+    margin-bottom: 2rem;
  }
 
  .img {

@@ -29,7 +29,7 @@ export default function Species() {
                     </Grid>
 
                     <div>
-    <h1>ESPÉCIES</h1>
+    <h1 className='title'>ESPÉCIES</h1>
     <table className="api">  
     {
         Species.map((item, key) =>
