@@ -11,18 +11,6 @@ import loginService from '../services/AutenticadorService'
 export default function Login(props) {
   const navigate = useNavigate();
 
-  const [count, setCount] = useState(0);
-
-  let incrementCount = () => {
-    setCount(count + 1);
-  };
-/*
-  localStorage.setItem("mykey","myvalue");
-  localStorage.getItem("mykey");
-  localStorage.removeItem("mykey");
-  localStorage.clear();
-  localStorage.setItem("ourarraykey",JSON.stringify(ourArray));
-*/
   const [lembrarme, setLembrarme] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -35,31 +23,6 @@ export default function Login(props) {
     }
   }, [])
 
-  /*
-  var ourArray =[1,2,3,4,5];
-  var storedArray = localStorage.getItem("ourarraykey"); ourArray = JSON.parse(storedArray);
-
-  const App = () => {
-    const [value, setValue] = React.useState('');
-   
-    const onChange = event => {
-      localStorage.setItem('myValueInLocalStorage', event.target.value);
-   
-      setValue(event.target.value);
-    };
-   
-    return (
-      <div>
-        <h1>Hello React with Local Storage!</h1>
-   
-        <input value={value} type="text" onChange={onChange} />
-   
-        <p>{value}</p>
-      </div>
-    );
-  };
-
-*/
   const validar = async () => {
 
     try {
@@ -94,17 +57,16 @@ export default function Login(props) {
 
 
   return (
-    <div className='login'>
     <Grid container style={{ padding: 10 }}>
       <Grid item xs={12}>
         <div style={{ textAlign: "center" }}>
           <h1>Sejam Bem-Vindos</h1>
           <h2>WIKIWARS ATITUS</h2>
-       
+
         </div>
       </Grid>
       <Grid item md={4} xs={12} sm={12}></Grid>
-      <Grid item md={4} xs={12} sm={12} className="login"  style={{ backgroundColor: "white", padding: 10, borderRadius: 10 }}>
+      <Grid item md={4} xs={12} sm={12} style={{ backgroundColor: "white", padding: 10, borderRadius: 10 }}>
         <div style={{ marginBottom: 10 }}>
           <TextField
             label="E-mail"
@@ -134,27 +96,16 @@ export default function Login(props) {
               label="Lembrar-me" />
           </FormGroup>
         </div>
-        <div>
-        <div class="count">
-          <h3>Count:</h3>
-          <h1>{count}</h1>
-        </div>
-        <div class="buttons">
-          <Button validar={"+"} action={incrementCount} />
-        </div>
-        </div>
         <div style={{ marginTop: 10, textAlign: "center" }}>
           <Button
             variant="contained"
             style={{ marginRight: 10 }}
             onClick={validar}
-            >Entrar</Button>
+          >Entrar</Button>
           <Button variant="outlined" onClick={limpar}>Cancelar</Button>
         </div>
       </Grid>
       <Grid item md={4} xs={12} sm={12}></Grid>
     </Grid>
-    </div>
   )
 }
-
