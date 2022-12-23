@@ -35,9 +35,9 @@ export default function MenuOpcoes() {
             <Link to="/duvidas">
                 <button className='button_menu'>Dúvidas</button>
             </Link>
-            <button className='button_menu' onClick={logoff}><LogoutIcon/></button>
+            <button className='button_menu' onClick={logoff}><LogoutIcon /></button>
         </div>
-        
+
 
     )
 }
