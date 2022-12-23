@@ -10,7 +10,7 @@
 
 .corpo {
     min-height: 180px;
-    background-color: white;
+    background-color: #e8e8e8;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -19,8 +19,7 @@
 
 .rodape {
 
-    min-height: 200px;
-    font-size: 12px;
+    min-height: 150px;
     background-image: url("../images/back2.jpg");
     background-size: cover;
 }
@@ -29,7 +28,14 @@
     color: #e8e8e8;
     font-size: 12px;
     text-align: center;
-    padding-top: 20%;
+
+}
+
+.rodape .dados {
+    color: #e8e8e8;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
 }
 
 .menu {
@@ -99,15 +105,27 @@ button .loagout {
 
 .api {
     width: 125%;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 
 }
 
 table {
-    border: 1px solid  #000000;
+    border: 1px solid #000000;
     border-radius: 14px 0px 0px 0px;
-    
+
+}
+
+.login {
+    background-image: url("../images/wppStar.jpg");
+    background-size: cover;
+}
+
+.equipe {
+
+
+    text-align: center;
+
 }
